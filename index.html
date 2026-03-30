@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built My Portfolio — Beginner Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .code-block { background: #010409; border: 1px solid #30363d; border-radius: 6px; padding: 16px; font-family: 'Courier New', monospace; font-size: 13px; color: #e6edf3; overflow-x: auto; }
+        .code-block .dollar { color: #7ee787; user-select: none; }
+        .step-number { background: #21262d; border: 1px solid #30363d; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #58a6ff; flex-shrink: 0; }
+        .tag { background: #1f2937; border: 1px solid #30363d; border-radius: 4px; padding: 1px 7px; font-size: 11px; color: #8b949e; font-family: monospace; }
+    </style>
+</head>
+<body class="bg-[#0d1117] text-[#c9d1d9] font-sans pb-20">
+
+    <!-- Nav -->
+    <nav class="border-b border-[#30363d] px-4 py-3 sticky top-0 bg-[#0d1117]/90 backdrop-blur z-10">
+        <div class="max-w-3xl mx-auto flex items-center justify-between">
+            <span class="text-white font-semibold text-sm">📘 Portfolio Guide</span>
+            <div class="flex gap-4 text-xs text-[#8b949e]">
+                <a href="#how-i-built" class="hover:text-white transition-colors">How I Built It</a>
+                <a href="#beginner-guide" class="hover:text-white transition-colors">Beginner Guide</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-3xl mx-auto px-4 py-12">
+
+        <!-- ===== SECTION 1: HOW I BUILT IT ===== -->
+        <section id="how-i-built" class="mb-20">
+            <div class="text-center mb-10">
+                <p class="text-[#8b949e] text-xs uppercase tracking-widest mb-2">Overview</p>
+                <h1 class="text-3xl font-bold text-white">How I Built My Portfolio</h1>
+                <p class="text-[#8b949e] mt-3 text-sm max-w-xl mx-auto">
+                    My portfolio at
+                    <a href="https://cris-portfolio-official.vercel.app/" target="_blank" class="text-[#58a6ff] hover:underline">cris-portfolio-official.vercel.app</a>
+                    was built using 3 completely free professional tools.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- VS Code -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="tag">Step 1</span>
+                        <h2 class="text-white font-semibold">Write Code — VS Code</h2>
+                    </div>
+                    <p class="text-[#8b949e] text-sm leading-relaxed">VS Code is a free code editor where I write all the HTML, CSS, and JavaScript for the site — line by line. Think of it like Microsoft Word, but for code.</p>
+                    <a href="https://code.visualstudio.com/" target="_blank" class="inline-flex items-center gap-2 mt-4 text-xs bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-white rounded px-3 py-1.5 transition-colors">
+                        ↗ code.visualstudio.com — Download Free
+                    </a>
+                </div>
+
+                <div class="flex justify-center text-[#30363d]">↓</div>
+
+                <!-- GitHub -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="tag">Step 2</span>
+                        <h2 class="text-white font-semibold">Save & Track Changes — GitHub</h2>
+                    </div>
+                    <p class="text-[#8b949e] text-sm leading-relaxed">GitHub is where I save my code online. Every change I make gets "pushed" here like a backup vault — I never lose my progress and can always go back to an older version.</p>
+                    <a href="https://github.com/" target="_blank" class="inline-flex items-center gap-2 mt-4 text-xs bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-white rounded px-3 py-1.5 transition-colors">
+                        ↗ github.com — Create Free Account
+                    </a>
+                </div>
+
+                <div class="flex justify-center text-[#30363d]">↓</div>
+
+                <!-- Vercel -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="tag">Step 3</span>
+                        <h2 class="text-white font-semibold">Publish Live — Vercel</h2>
+                    </div>
+                    <p class="text-[#8b949e] text-sm leading-relaxed">Vercel connects to GitHub and automatically publishes the site live on the internet. Every time I save new code to GitHub, Vercel rebuilds and updates the website in seconds — automatically, for free.</p>
+                    <a href="https://vercel.com/" target="_blank" class="inline-flex items-center gap-2 mt-4 text-xs bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-white rounded px-3 py-1.5 transition-colors">
+                        ↗ vercel.com — Get Started Free
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-[#161b22] border border-[#30363d] rounded-lg p-4 text-center">
+                <p class="text-[#8b949e] text-xs mb-1">The full workflow:</p>
+                <p class="font-mono text-sm text-white">Write in <span class="text-[#58a6ff]">VS Code</span> → Save to <span class="text-[#c9d1d9]">GitHub</span> → Live on <span class="text-white font-bold">Vercel</span></p>
+                <p class="text-[#8b949e] text-xs mt-2">All three tools are 100% free.</p>
+            </div>
+
+            <div class="mt-5 text-center">
+                <a href="https://cris-portfolio-official.vercel.app/" target="_blank" class="inline-flex items-center gap-2 bg-[#238636] hover:bg-[#2ea043] text-white text-sm font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                    🌐 View the Final Result
+                </a>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="border-t border-[#30363d] mb-16 relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0d1117] px-4 text-[#8b949e] text-xs uppercase tracking-widest">Beginner Guide Below</span>
+        </div>
+
+        <!-- ===== SECTION 2: BEGINNER GUIDE ===== -->
+        <section id="beginner-guide">
+            <div class="text-center mb-12">
+                <p class="text-[#8b949e] text-xs uppercase tracking-widest mb-2">Start From Zero</p>
+                <h2 class="text-3xl font-bold text-white">Make Your Own Portfolio</h2>
+                <p class="text-[#8b949e] mt-3 text-sm max-w-xl mx-auto">
+                    A complete step-by-step guide for total beginners. No experience needed.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+
+                <!-- STEP 1 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Create a GitHub Account</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">Your online code storage — think of it like Google Drive but for code.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-3 text-sm text-[#8b949e]">
+                        <p>1. Go to <a href="https://github.com" target="_blank" class="text-[#58a6ff] hover:underline">github.com</a> and click <strong class="text-white">Sign Up</strong>.</p>
+                        <p>2. Enter your email, create a username and password.</p>
+                        <p>3. Verify your account through the email they send you.</p>
+                        <p>4. That's it — you now have a GitHub account! ✅</p>
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-3 text-xs text-[#8b949e] mt-2">
+                            💡 <strong class="text-[#c9d1d9]">What is GitHub?</strong> GitHub is a website where developers store their code online. Each project you save there is called a <strong class="text-[#c9d1d9]">Repository</strong> (or "repo" for short). It's like a folder for your entire project that lives on the cloud.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Find a Sample Portfolio to Start From</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">Don't start from scratch — use an existing template as your base.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-3 text-sm text-[#8b949e]">
+                        <p>On GitHub, you can search for free portfolio templates others have shared. Here is a great beginner-friendly one you can use right now:</p>
+
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded-lg p-4 mt-2">
+                            <div class="flex items-start justify-between gap-4 flex-wrap">
+                                <div>
+                                    <p class="text-white font-semibold font-mono text-sm">cobiwave / simplefolio</p>
+                                    <p class="text-[#8b949e] text-xs mt-1">A clean, beautiful and responsive portfolio template for developers.</p>
+                                    <div class="flex gap-2 mt-2 text-xs text-[#8b949e]">
+                                        <span>⭐ 12k+ stars</span>
+                                        <span>·</span>
+                                        <span>HTML / CSS / JS</span>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/cobiwave/simplefolio" target="_blank" class="inline-flex items-center gap-1.5 text-xs bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-white rounded px-3 py-1.5 transition-colors whitespace-nowrap">
+                                    ↗ View on GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-xs">You can also search for more templates by typing <code class="bg-[#21262d] px-1.5 py-0.5 rounded text-[#c9d1d9]">portfolio template</code> in the GitHub search bar.</p>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Fork the Repository (Copy It to Your Account)</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">This makes a personal copy of the template under your GitHub account.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-3 text-sm text-[#8b949e]">
+                        <p>1. Open the template repo link above.</p>
+                        <p>2. Click the <strong class="text-white">Fork</strong> button at the top right of the page.</p>
+                        <p>3. Click <strong class="text-white">Create Fork</strong> — GitHub copies the whole project to your account.</p>
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-3 text-xs mt-2">
+                            💡 <strong class="text-[#c9d1d9]">What is a Fork?</strong> Forking means "I want my own copy of this project." Your forked copy is now at <code class="bg-[#21262d] px-1 py-0.5 rounded text-[#c9d1d9]">github.com/YOUR-USERNAME/simplefolio</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Download It to Your Computer (Clone)</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">Cloning brings the code from GitHub down to your local machine.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-4 text-sm text-[#8b949e]">
+                        <p>You need <strong class="text-white">Git</strong> installed first. Download it here:</p>
+                        <a href="https://git-scm.com/downloads" target="_blank" class="inline-flex items-center gap-1.5 text-xs bg-[#21262d] hover:bg-[#30363d] border border-[#30363d] text-white rounded px-3 py-1.5 transition-colors">
+                            ↗ git-scm.com — Download Git (Free)
+                        </a>
+                        <p class="mt-2">After installing Git, open the <strong class="text-white">Terminal</strong> (on Windows: search for <strong class="text-white">Git Bash</strong> or <strong class="text-white">Command Prompt</strong>) and run this command:</p>
+                        <div class="code-block">
+                            <span class="dollar">$ </span>git clone https://github.com/YOUR-USERNAME/simplefolio.git
+                        </div>
+                        <p class="text-xs">Replace <code class="bg-[#21262d] px-1 py-0.5 rounded text-[#c9d1d9]">YOUR-USERNAME</code> with your actual GitHub username.</p>
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-3 text-xs">
+                            💡 <strong class="text-[#c9d1d9]">What does Clone do?</strong> It downloads a full copy of the project folder onto your computer so you can edit it.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 5 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Open the Folder in VS Code</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">This is where you'll edit everything — your name, projects, colors, and text.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-3 text-sm text-[#8b949e]">
+                        <p>1. Open <a href="https://code.visualstudio.com/" target="_blank" class="text-[#58a6ff] hover:underline">VS Code</a>.</p>
+                        <p>2. Click <strong class="text-white">File → Open Folder</strong>.</p>
+                        <p>3. Find and select the <strong class="text-white">simplefolio</strong> folder you just downloaded.</p>
+                        <p>4. The project files will appear on the left sidebar panel.</p>
+                        <p>5. Open <code class="bg-[#21262d] px-1.5 py-0.5 rounded text-[#c9d1d9]">index.html</code> to start editing your name, bio, and project links!</p>
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-3 text-xs mt-1">
+                            💡 You can also open VS Code directly from the terminal by navigating into the folder and typing <code class="bg-[#21262d] px-1 py-0.5 rounded text-[#c9d1d9]">code .</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 6 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">6</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Save Your Changes to GitHub (Push)</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">After editing, you sync your changes back to GitHub using these commands.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-4 text-sm text-[#8b949e]">
+                        <p>Open the terminal inside VS Code (<strong class="text-white">Terminal → New Terminal</strong>) and run these 3 commands in order:</p>
+
+                        <div class="space-y-3">
+                            <div>
+                                <p class="text-xs text-[#8b949e] mb-1">① Stage all your changes (tell Git what you edited):</p>
+                                <div class="code-block"><span class="dollar">$ </span>git add .</div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#8b949e] mb-1">② Commit with a message (describe what you changed):</p>
+                                <div class="code-block"><span class="dollar">$ </span>git commit -m "Updated my name and projects"</div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#8b949e] mb-1">③ Push to GitHub (upload your changes):</p>
+                                <div class="code-block"><span class="dollar">$ </span>git push</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-4 text-xs space-y-2 mt-2">
+                            <p><strong class="text-[#c9d1d9]">📤 git push</strong> — Uploads your local changes to your GitHub repo online.</p>
+                            <p><strong class="text-[#c9d1d9]">📥 git pull</strong> — Downloads the latest changes from GitHub to your computer (use this if you work on multiple devices or collaborate with others).</p>
+                            <p><strong class="text-[#c9d1d9]">📝 git status</strong> — Shows you what files you've changed. Useful to check before pushing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 7 -->
+                <div class="bg-[#161b22] border border-[#30363d] rounded-lg overflow-hidden">
+                    <div class="border-b border-[#30363d] px-6 py-4 flex items-center gap-3">
+                        <div class="step-number">7</div>
+                        <div>
+                            <h3 class="text-white font-semibold">Deploy to the Internet — Vercel</h3>
+                            <p class="text-[#8b949e] text-xs mt-0.5">This makes your portfolio live at a public URL — completely free.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-5 space-y-3 text-sm text-[#8b949e]">
+                        <p>1. Go to <a href="https://vercel.com" target="_blank" class="text-[#58a6ff] hover:underline">vercel.com</a> and click <strong class="text-white">Sign Up</strong>.</p>
+                        <p>2. Choose <strong class="text-white">Continue with GitHub</strong> — this links your accounts together.</p>
+                        <p>3. Once logged in, click <strong class="text-white">Add New → Project</strong>.</p>
+                        <p>4. You'll see your GitHub repos listed — click <strong class="text-white">Import</strong> next to <strong class="text-white">simplefolio</strong>.</p>
+                        <p>5. Leave all settings as default and click <strong class="text-white">Deploy</strong>.</p>
+                        <p>6. Wait about 30 seconds — Vercel will give you a live link like:</p>
+                        <div class="code-block">https://simplefolio-yourname.vercel.app</div>
+                        <div class="bg-[#0d1117] border border-[#30363d] rounded p-3 text-xs mt-2">
+                            🚀 <strong class="text-[#c9d1d9]">Auto-Deploy:</strong> From now on, every time you <code class="bg-[#21262d] px-1 py-0.5 rounded">git push</code> a change, Vercel will automatically rebuild and update your live site — no extra steps needed!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Summary Checklist -->
+            <div class="mt-10 bg-[#161b22] border border-[#30363d] rounded-lg p-6">
+                <h3 class="text-white font-semibold mb-4">✅ Quick Checklist</h3>
+                <ul class="space-y-2 text-sm text-[#8b949e]">
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Created a GitHub account</li>
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Found and forked a portfolio template</li>
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Installed Git & cloned the repo to my computer</li>
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Opened the folder in VS Code and edited my info</li>
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Pushed changes back to GitHub (<code class="bg-[#21262d] px-1 rounded">git add . → git commit → git push</code>)</li>
+                    <li class="flex items-center gap-2"><span class="text-[#3fb950]">☑</span> Deployed the site live using Vercel</li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <a href="https://code.visualstudio.com/" target="_blank" class="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors group">
+                    <p class="text-white text-sm font-semibold group-hover:text-[#58a6ff]">VS Code ↗</p>
+                    <p class="text-[#8b949e] text-xs mt-1">code.visualstudio.com</p>
+                </a>
+                <a href="https://github.com/" target="_blank" class="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors group">
+                    <p class="text-white text-sm font-semibold group-hover:text-[#58a6ff]">GitHub ↗</p>
+                    <p class="text-[#8b949e] text-xs mt-1">github.com</p>
+                </a>
+                <a href="https://vercel.com/" target="_blank" class="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors group">
+                    <p class="text-white text-sm font-semibold group-hover:text-[#58a6ff]">Vercel ↗</p>
+                    <p class="text-[#8b949e] text-xs mt-1">vercel.com</p>
+                </a>
+            </div>
+
+            <!-- View Live Example -->
+            <div class="mt-8 text-center">
+                <p class="text-[#8b949e] text-sm mb-3">Want to see what the end result looks like?</p>
+                <a href="https://cris-portfolio-official.vercel.app/" target="_blank" class="inline-flex items-center gap-2 bg-[#238636] hover:bg-[#2ea043] text-white text-sm font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                    🌐 View My Portfolio as an Example
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-12 text-[#8b949e] text-xs">
+        Built by Criz · Powered by VS Code, GitHub & Vercel
+    </div>
+
+</body>
+</html>
